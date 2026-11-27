@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" href="data:," />
+<title>Good Morning Kids — Media Kit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#fff8ec;
+    --bg-soft:#ffefd2;
+    --card:#ffffff;
+    --ink:#33241a;
+    --ink-soft:#6b5546;
+    --line:#f0d9ae;
+    --saffron:#f59e0b;
+    --saffron-deep:#ea580c;
+    --saffron-soft:#fef3c7;
+    --leaf:#3f9e4d;
+    --leaf-soft:#e6f5e3;
+    --sky:#2f80ed;
+    --sky-soft:#e3efff;
+    --rose:#e05260;
+    --rose-soft:#fde8ea;
+    --shadow:0 10px 30px rgba(180,110,20,.14);
+    --radius:20px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#1d1409;
+      --bg-soft:#2a1c0b;
+      --card:#2b1e10;
+      --ink:#fdf3e3;
+      --ink-soft:#d8c3a5;
+      --line:#4a3517;
+      --saffron:#fbbf24;
+      --saffron-deep:#fb923c;
+      --saffron-soft:#3d2c0d;
+      --leaf:#7ed492;
+      --leaf-soft:#1e3320;
+      --sky:#7db4ff;
+      --sky-soft:#1d2f4d;
+      --rose:#ff8f9a;
+      --rose-soft:#42242a;
+      --shadow:0 10px 30px rgba(0,0,0,.45);
+    }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:"Nunito",system-ui,-apple-system,"Segoe UI",sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.display{font-family:"Baloo 2","Nunito",sans-serif;line-height:1.15;margin:0}
+  a{color:var(--saffron-deep)}
+  .wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    background:linear-gradient(180deg,var(--bg-soft) 0%,var(--bg) 100%);
+    padding:44px 0 8px;
+    overflow:hidden;
+  }
+  .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:24px;align-items:center}
+  .kicker{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--card);border:1.5px solid var(--line);
+    border-radius:999px;padding:6px 14px;font-weight:800;font-size:.85rem;color:var(--saffron-deep);
+  }
+  .kicker .dot{width:9px;height:9px;border-radius:50%;background:var(--leaf)}
+  .hero h1{font-size:clamp(2.4rem,6vw,3.9rem);font-weight:800;letter-spacing:-.01em;margin:16px 0 10px}
+  .hero h1 .sun-word{color:var(--saffron-deep)}
+  .hero .tagline{font-size:clamp(1.05rem,2.4vw,1.3rem);font-weight:700;color:var(--ink)}
+  .hero .sub{color:var(--ink-soft);max-width:56ch;margin:8px 0 0}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+  .btn{
+    display:inline-flex;align-items:center;gap:9px;min-height:48px;
+    padding:12px 22px;border-radius:999px;font-weight:800;font-size:1rem;
+    text-decoration:none;border:2px solid transparent;transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .btn:active{transform:scale(.97)}
+  .btn-primary{background:var(--saffron-deep);color:#fff;box-shadow:0 8px 20px rgba(234,88,12,.30)}
+  .btn-ghost{background:var(--card);color:var(--ink);border-color:var(--line)}
+  .hero-art{display:flex;justify-content:center}
+  .hero-art svg{width:min(300px,80vw);height:auto}
+  .verified-line{margin-top:18px;font-size:.85rem;color:var(--ink-soft);font-weight:700}
+
+  /* ---------- Stats ---------- */
+  .stats{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:30px 0 6px;
+  }
+  .stat{
+    background:var(--card);border:1.5px solid var(--line);border-radius:var(--radius);
+    padding:18px 16px;text-align:center;box-shadow:var(--shadow);
+  }
+  .stat .num{font-family:"Baloo 2",sans-serif;font-size:2rem;font-weight:800;color:var(--saffron-deep);line-height:1}
+  .stat .lbl{font-size:.85rem;font-weight:700;color:var(--ink-soft);margin-top:6px}
+
+  /* ---------- Sections ---------- */
+  section{padding:38px 0 6px}
+  .sec-head{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+  .sec-head .ico{
+    width:44px;height:44px;flex:0 0 44px;border-radius:14px;display:grid;place-items:center;
+    background:var(--saffron-soft);font-size:1.35rem;
+  }
+  .sec-head h2{font-size:clamp(1.5rem,3.4vw,2rem);font-weight:800}
+  .sec-sub{color:var(--ink-soft);max-width:68ch;margin:0 0 20px}
+
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+
+  .card{
+    background:var(--card);border:1.5px solid var(--line);border-radius:var(--radius);
+    padding:22px;box-shadow:var(--shadow);
+  }
+  .card h3{font-size:1.2rem;font-weight:700;margin-bottom:6px}
+  .card p{margin:0;color:var(--ink-soft)}
+  .card p + p{margin-top:8px}
+
+  /* channel cards */
+  .channel{display:flex;flex-direction:column;gap:8px;text-decoration:none;color:var(--ink)}
+  .channel .top{display:flex;align-items:center;gap:12px}
+  .channel .badge{
+    width:46px;height:46px;flex:0 0 46px;border-radius:14px;display:grid;place-items:center;
+    font-family:"Baloo 2",sans-serif;font-weight:800;font-size:1.15rem;color:#fff;
+  }
+  .b-blog{background:#f59e0b}.b-yt{background:#e05260}.b-ig{background:#c13584}
+  .b-fb{background:#2f80ed}.b-pin{background:#c8232c}.b-th{background:#444}
+  .channel .name{font-family:"Baloo 2",sans-serif;font-weight:700;font-size:1.15rem}
+  .channel .handle{font-size:.85rem;color:var(--ink-soft);font-weight:700;word-break:break-all}
+  .channel .metric{margin-top:auto;padding-top:8px;border-top:1.5px dashed var(--line);font-weight:800;color:var(--saffron-deep)}
+  .channel .metric small{display:block;color:var(--ink-soft);font-weight:700}
+  a.channel{transition:transform .15s ease}
+  a.channel:hover{transform:translateY(-3px)}
+
+  /* deliverables list */
+  .deliver{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .deliver li{
+    background:var(--card);border:1.5px solid var(--line);border-radius:16px;
+    padding:16px 18px;display:flex;gap:12px;align-items:flex-start;box-shadow:var(--shadow);
+  }
+  .deliver .tick{
+    flex:0 0 30px;width:30px;height:30px;border-radius:50%;background:var(--leaf-soft);
+    color:var(--leaf);display:grid;place-items:center;font-weight:900;
+  }
+  .deliver b{display:block;font-family:"Baloo 2",sans-serif;font-size:1.05rem}
+  .deliver span{color:var(--ink-soft);font-size:.94rem}
+
+  /* collab types */
+  .collab{border-top:6px solid var(--saffron)}
+  .collab.now{border-top-color:var(--leaf)}
+  .tag{
+    display:inline-block;font-size:.75rem;font-weight:900;letter-spacing:.06em;text-transform:uppercase;
+    padding:4px 10px;border-radius:999px;margin-bottom:10px;
+  }
+  .tag-open{background:var(--leaf-soft);color:var(--leaf)}
+  .tag-soon{background:var(--saffron-soft);color:var(--saffron-deep)}
+
+  /* audience chips */
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+  .chip{
+    background:var(--card);border:1.5px solid var(--line);border-radius:999px;
+    padding:9px 16px;font-weight:800;font-size:.95rem;box-shadow:var(--shadow);
+  }
+  .chip em{font-style:normal;color:var(--saffron-deep)}
+
+  /* contact */
+  .contact{
+    background:linear-gradient(135deg,var(--saffron) 0%,var(--saffron-deep) 100%);
+    border-radius:26px;padding:34px 28px;color:#fff;margin:14px 0 8px;
+    box-shadow:0 16px 36px rgba(234,88,12,.35);
+  }
+  .contact h2{color:#fff;font-size:clamp(1.6rem,4vw,2.2rem)}
+  .contact p{color:#ffe9d2;max-width:60ch}
+  .contact-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+  .contact .btn{background:#fff;color:#b34700;border-color:#fff}
+  .contact .btn.alt{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
+
+  .note{
+    background:var(--card);border:1.5px dashed var(--line);border-radius:16px;
+    padding:16px 20px;color:var(--ink-soft);font-size:.93rem;margin-top:26px;
+  }
+  .note b{color:var(--ink)}
+
+  footer{padding:30px 0 44px;text-align:center;color:var(--ink-soft);font-size:.92rem}
+  footer .by{font-family:"Baloo 2",sans-serif;font-weight:700;color:var(--ink);font-size:1.05rem}
+  footer a{font-weight:700}
+
+  @media (max-width:760px){
+    .hero-grid{grid-template-columns:1fr}
+    .hero-art{order:-1}
+    .hero-art svg{width:190px}
+    .stats{grid-template-columns:repeat(2,1fr)}
+    .grid2,.grid3,.deliver{grid-template-columns:1fr}
+    .hero{padding-top:28px}
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto}
+    *{transition:none !important}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="kicker"><span class="dot"></span> Media Kit · Brand Collaborations Open</span>
+        <h1>Good <span class="sun-word">Morning</span> Kids</h1>
+        <p class="tagline">Hindi + English toddler learning for ages 3–5 — rhymes, printables, free tools and an app, made for Indian parents.</p>
+        <p class="sub">One creator, seven channels, one clear audience: parents of little learners who start every morning with a rhyme, a routine and something new to learn.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="mailto:abcd842323@gmail.com?subject=Brand%20Collaboration%20—%20Good%20Morning%20Kids">✉️ Email for a Collab</a>
+          <a class="btn btn-ghost" href="https://wa.me/918543083014" target="_blank" rel="noopener">💬 WhatsApp Us</a>
+        </div>
+        <p class="verified-line">All numbers on this page verified on 27 November 2026.</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 300 260" role="img" aria-label="A smiling sun rising over green hills">
+          <circle cx="150" cy="118" r="58" fill="#fbbf24"/>
+          <g stroke="#f59e0b" stroke-width="9" stroke-linecap="round">
+            <line x1="150" y1="22" x2="150" y2="42"/>
+            <line x1="150" y1="194" x2="150" y2="214"/>
+            <line x1="54" y1="118" x2="74" y2="118"/>
+            <line x1="226" y1="118" x2="246" y2="118"/>
+            <line x1="82" y1="50" x2="96" y2="64"/>
+            <line x1="204" y1="172" x2="218" y2="186"/>
+            <line x1="218" y1="50" x2="204" y2="64"/>
+            <line x1="96" y1="172" x2="82" y2="186"/>
+          </g>
+          <circle cx="130" cy="110" r="6" fill="#7c4a03"/>
+          <circle cx="170" cy="110" r="6" fill="#7c4a03"/>
+          <path d="M128 134 Q150 152 172 134" stroke="#7c4a03" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <circle cx="112" cy="128" r="8" fill="#fda4af" opacity=".8"/>
+          <circle cx="188" cy="128" r="8" fill="#fda4af" opacity=".8"/>
+          <path d="M0 226 Q75 188 150 216 T300 210 V260 H0 Z" fill="#3f9e4d"/>
+          <path d="M0 240 Q90 210 180 234 T300 232 V260 H0 Z" fill="#2f7d3c"/>
+          <g font-family="Baloo 2, sans-serif" font-weight="800">
+            <text x="36" y="212" font-size="26" fill="#b91c1c">Aa</text>
+            <text x="238" y="206" font-size="26" fill="#1d4ed8">अ</text>
+            <text x="196" y="240" font-size="22" fill="#f59e0b">123</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <!-- ============ STATS ============ -->
+    <div class="stats" aria-label="Key numbers">
+      <div class="stat"><div class="num">146</div><div class="lbl">YouTube subscribers</div></div>
+      <div class="stat"><div class="num">178</div><div class="lbl">Videos published</div></div>
+      <div class="stat"><div class="num">34</div><div class="lbl">Blog posts live</div></div>
+      <div class="stat"><div class="num">21</div><div class="lbl">Instagram posts</div></div>
+      <div class="stat"><div class="num">29</div><div class="lbl">Free learning tools</div></div>
+      <div class="stat"><div class="num">7</div><div class="lbl">Channels, one audience</div></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ ABOUT ============ -->
+  <section aria-labelledby="about-h">
+    <div class="sec-head"><span class="ico" aria-hidden="true">🌅</span><h2 id="about-h">About the Brand</h2></div>
+    <p class="sec-sub">Good Morning Kids helps Indian parents of 3–5 year olds teach through play — bilingual rhymes, morning routines, printable worksheets and simple daily tools, in Hindi and English side by side.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>What we make</h3>
+        <p>Nursery-rhyme Shorts in Hindi and English, a blog for parents, printable activity packs, 29 free online tools (name tracing, flashcards, reward charts, colouring pages and everyday family calculators), and the Hindi Seekho app for early Hindi learning.</p>
+      </div>
+      <div class="card">
+        <h3>Why brands work with us</h3>
+        <p>A focused, hard-to-reach audience: parents actively looking for learning products for their toddler right now. Every channel speaks to the same parent, so one collaboration can appear as a Reel, a Short, a blog review and a pin — all from a single brief.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AUDIENCE ============ -->
+  <section aria-labelledby="aud-h">
+    <div class="sec-head"><span class="ico" aria-hidden="true">👨‍👩‍👧</span><h2 id="aud-h">Our Audience</h2></div>
+    <p class="sec-sub">Indian parents of toddlers aged 3–5, following along in Hindi and English. They come for rhymes and routines, and stay for printables, tools and product ideas for their child.</p>
+    <div class="chips">
+      <span class="chip">Age group · <em>Parents of 3–5 yr olds</em></span>
+      <span class="chip">Location · <em>India</em></span>
+      <span class="chip">Languages · <em>Hindi + English</em></span>
+      <span class="chip">Interests · <em>Early learning, rhymes, printables, parenting</em></span>
+      <span class="chip">Buys for · <em>Books, toys, learning kits, kids' daily essentials</em></span>
+    </div>
+  </section>
+
+  <!-- ============ CHANNELS ============ -->
+  <section aria-labelledby="ch-h">
+    <div class="sec-head"><span class="ico" aria-hidden="true">📺</span><h2 id="ch-h">Channels</h2></div>
+    <p class="sec-sub">Every channel is live and posting. Tap any card to visit.</p>
+    <div class="grid3">
+      <a class="card channel" href="https://www.youtube.com/@LittleMRhymes" target="_blank" rel="noopener">
+        <span class="top"><span class="badge b-yt">▶</span><span><span class="name">YouTube</span><br /><span class="handle">LittleMRhymes</span></span></span>
+        <span class="metric">146 subscribers<small>178 videos, incl. 6 Good Morning Kids rhyme Shorts</small></span>
+      </a>
+      <a class="card channel" href="https://goodmorningkidsrhymes.blogspot.com/" target="_blank" rel="noopener">
+        <span class="top"><span class="badge b-blog">✎</span><span><span class="name">Blog</span><br /><span class="handle">goodmorningkidsrhymes.blogspot.com</span></span></span>
+        <span class="metric">34 posts live<small>Parenting guides, rhymes, free printables &amp; tools</small></span>
+      </a>
+      <a class="card channel" href="https://www.instagram.com/goodmorningkidsrhymes/" target="_blank" rel="noopener">
+        <span class="top"><span class="badge b-ig">◎</span><span><span class="name">Instagram</span><br /><span class="handle">@goodmorningkidsrhymes</span></span></span>
+        <span class="metric">Growing community<small>21 posts — Reels &amp; learning content</small></span>
+      </a>
+      <a class="card channel" href="https://www.facebook.com/profile.php?id=61596809489559" target="_blank" rel="noopener">
+        <span class="top"><span class="badge b-fb">f</span><span><span class="name">Facebook Page</span><br /><span class="handle">Good Morning Kids</span></span></span>
+        <span class="metric">Growing community<small>Posts, Reels &amp; parent updates</small></span>
+      </a>
+      <a class="card channel" href="https://www.pinterest.com/abcd842323/" target="_blank" rel="noopener">
+        <span class="top"><span class="badge b-pin">P</span><span><span class="name">Pinterest</span><br /><span class="handle">Good Morning Kids</span></span></span>
+        <span class="metric">Growing community<small>Pins for printables, tools &amp; blog posts</small></span>
+      </a>
+      <a class="card channel" href="https://www.threads.com/@goodmorningkidsrhymes" target="_blank" rel="noopener">
+        <span class="top"><span class="badge b-th">@</span><span><span class="name">Threads</span><br /><span class="handle">@goodmorningkidsrhymes</span></span></span>
+        <span class="metric">Growing community<small>Short posts &amp; content announcements</small></span>
+      </a>
+    </div>
+    <div class="grid2" style="margin-top:16px">
+      <a class="card channel" href="https://abcd842323-spec.github.io/hindi-seekho-app/" target="_blank" rel="noopener">
+        <span class="top"><span class="badge" style="background:#ea580c">अ</span><span><span class="name">Hindi Seekho App</span><br /><span class="handle">abcd842323-spec.github.io/hindi-seekho-app</span></span></span>
+        <span class="metric">Live app<small>Hindi lessons, flashcards &amp; quizzes for kids — also as an Android APK</small></span>
+      </a>
+      <div class="card">
+        <h3>29 Free Tools</h3>
+        <p>Name tracing, Hindi varnamala tracing, bilingual flashcards, reward charts, a colouring-page maker — plus everyday family calculators and Hindu &amp; Muslim daily-use tools that bring parents back every day.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT BRANDS GET ============ -->
+  <section aria-labelledby="get-h">
+    <div class="sec-head"><span class="ico" aria-hidden="true">🎁</span><h2 id="get-h">What Brands Get</h2></div>
+    <p class="sec-sub">Pick one format or bundle several — everything is produced in-house, in Hindi, English, or both.</p>
+    <ul class="deliver">
+      <li><span class="tick">✓</span><div><b>Instagram Reel</b><span>A fun, parent-first Reel featuring your product in a real learning moment.</span></div></li>
+      <li><span class="tick">✓</span><div><b>YouTube Short</b><span>A Short on the LittleMRhymes channel, where the rhyme content already lives.</span></div></li>
+      <li><span class="tick">✓</span><div><b>Facebook + Instagram Post</b><span>Photo or carousel post with caption, product link and affiliate link where applicable.</span></div></li>
+      <li><span class="tick">✓</span><div><b>Blog Review</b><span>A full written review on the Good Morning Kids blog — searchable long after the campaign ends.</span></div></li>
+      <li><span class="tick">✓</span><div><b>Pinterest Pin</b><span>A designed pin linked to your product or the review, on a board parents save from.</span></div></li>
+      <li><span class="tick">✓</span><div><b>UGC Video</b><span>A ready-to-post video made for your brand's own page or ad account.</span></div></li>
+    </ul>
+  </section>
+
+  <!-- ============ COLLAB TYPES ============ -->
+  <section aria-labelledby="col-h">
+    <div class="sec-head"><span class="ico" aria-hidden="true">🤝</span><h2 id="col-h">Ways to Collaborate</h2></div>
+    <p class="sec-sub">We're a growing channel and we price that honestly. Start with barter, and grow with us.</p>
+    <div class="grid2">
+      <div class="card collab now">
+        <span class="tag tag-open">Open now</span>
+        <h3>Barter Collaboration</h3>
+        <p>Send your product, and we create genuine content with it — a Reel or Short, posts and a pin. Best for baby care, kids' learning, books, toys and parenting brands trying us out.</p>
+      </div>
+      <div class="card collab now">
+        <span class="tag tag-open">Open now</span>
+        <h3>UGC Content</h3>
+        <p>We script, shoot and deliver a video in our style for your own channels or ads — no posting on our channels required.</p>
+      </div>
+      <div class="card collab now">
+        <span class="tag tag-open">Open now</span>
+        <h3>Affiliate Partnership</h3>
+        <p>Open to affiliate partnerships for kids' learning products. Share your programme and we'll feature products that genuinely fit our audience.</p>
+      </div>
+      <div class="card collab">
+        <span class="tag tag-soon">As we grow</span>
+        <h3>Paid Collaboration</h3>
+        <p>Sponsored Reels, Shorts and blog reviews at paid rates as the audience grows.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OWN PRODUCTS ============ -->
+  <section aria-labelledby="prod-h">
+    <div class="sec-head"><span class="ico" aria-hidden="true">🧺</span><h2 id="prod-h">Our Own Products</h2></div>
+    <p class="sec-sub">Proof we build things parents actually use — and the same care goes into brand work.</p>
+    <div class="grid2">
+      <div class="card">
+        <h3>20-Page Printable Pack · ₹199</h3>
+        <p>Good Morning Routine printable pack for toddlers — tracing, routines and activities, sold directly to parents.</p>
+      </div>
+      <div class="card">
+        <h3>Hindi Seekho App</h3>
+        <p>Hindi learning app with lessons, flashcards and quizzes for young kids, free to learn with paid plans for families who want more.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section aria-labelledby="ct-h">
+    <div class="contact">
+      <h2 id="ct-h">Let's work together ☀️</h2>
+      <p>Tell us about your product and what you'd like — a Reel, a review, UGC, or a barter trial. We reply to every genuine brand enquiry.</p>
+      <div class="contact-row">
+        <a class="btn" href="mailto:abcd842323@gmail.com?subject=Brand%20Collaboration%20—%20Good%20Morning%20Kids">✉️ abcd842323@gmail.com</a>
+        <a class="btn alt" href="https://wa.me/918543083014" target="_blank" rel="noopener">💬 WhatsApp · +91 85430 83014</a>
+      </div>
+    </div>
+    <div class="note">
+      <b>Disclosure:</b> Sponsored and barter posts are always labelled <b>#ad</b> / <b>#collab</b>, as required by ASCI (Advertising Standards Council of India) guidelines for influencer advertising. We only feature products we would genuinely use with a 3–5 year old.
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="by">Good Morning Kids · By Mahesh Kumar (Ram Mahadev)</p>
+    <p>Hindi + English toddler learning for ages 3–5 · India<br />
+    <a href="https://goodmorningkidsrhymes.blogspot.com/" target="_blank" rel="noopener">Blog</a> ·
+    <a href="https://www.instagram.com/goodmorningkidsrhymes/" target="_blank" rel="noopener">Instagram</a> ·
+    <a href="https://www.youtube.com/@LittleMRhymes" target="_blank" rel="noopener">YouTube</a> ·
+    <a href="https://www.pinterest.com/abcd842323/" target="_blank" rel="noopener">Pinterest</a></p>
+    <p>Media kit · Numbers verified 27 November 2026</p>
+  </div>
+</footer>
+
+</body>
+</html>
